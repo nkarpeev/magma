@@ -1,0 +1,74 @@
+.footer
+  margin-top: 4rem
+  padding: 1rem 0
+  background-color: $black
+  color: $white
+  &__col
+    border-left: 1px solid $accent
+    padding-top: 2rem
+    padding-bottom:  2rem
+    &:first-child
+      border-left: 0
+    &__inner
+      max-width: 13rem
+      margin-left: auto
+      margin-right: auto
+  &__link
+    display: block
+    color: $white
+    margin-top: .5rem
+    &:hover
+      color: $white
+
+  &__logo
+    width: 7.5rem
+    margin-bottom: 2rem
+  &__soc
+    margin-right: .25rem
+    &:before
+      display: inline-block
+      content: ""
+      width: 1.5rem
+      height: 1.5rem
+      background-size: contain
+
+.vk
+  &:before
+    background-image: url('../img/svg/vk.svg')
+
+.instagram
+  &:before
+    background-image: url('../img/svg/insta.svg')
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+ .footer
+   &__col
+    border-left: 0px
+   
+// ≥768px
++media-breakpoint-down(sm)
+
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

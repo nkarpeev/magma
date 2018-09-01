@@ -20,6 +20,8 @@
   <link rel="manifest" href="img/favicon/site.webmanifest">
   <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+
 
 	<!-- Template Basic Images End -->
 	
@@ -34,46 +36,319 @@
 
 <body>
 
-	<!-- Custom HTML -->
+  <section class="nav__section" id="nav">
+    <div class="nav__header">
+      <div class="container">
+        <div class="row nav__header__row">
+          
+          <a href="mailto:magma_kzn@mail.ru" class="col nav__header__link">
+            <img src="img/svg/mail.svg" class="nav__header__link__icon" alt="">
+            <span>magma_kzn@mail.ru</span>
+          </a>
+          <a href="/" class="nav__header__logo">
+              <img src="img/svg/magma_logo.svg" class=" nav__header__logo__img" alt="">
+          </a>
+          <a href="tel:8 843 214-58-33" class="col nav__header__link">
+              <img src="img/svg/phone.svg" class="nav__header__link__icon" alt="">
+              <span>8 843 214-58-33</span>
+          </a>
+        </div>
+      </div>
+    </div>
 
-	<div class="container">
+    <div class="nav__menu">
+      <div class="container">
+        <div class="row">
+          <nav class="col navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
+              <ul class="navbar-nav">
 
-		<div class="row">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">ГЛАВНАЯ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">ПОРТФОЛИО ПРОЕКТОВ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="our_product.html">НАШИ ПРОДУКТЫ</a>
+                </li>
 
-			<div class="col-8 offset-2">
-				
-        
-        <div  
-          class="fotorama" 
-          data-nav="thumbs">
-          <img src="img/images/portfolio covers/electropribor.jpg" alt="Start HTML5 Template">
-          <img src="img/images/portfolio covers/electropribor.jpg" alt="Start HTML5 Template">
+                <li class="nav-item dropdown">
+                  <a class="nav-link " href="production.html"  role="button"  aria-haspopup="true" aria-expanded="false">
+                    ПРОИЗВОДСТВО 
+                  </a>
+                  <span class="dropdown-btn" data-toggle="dropdown"></span>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="equipment.html">ОБОРУДОВАНИЕ</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="technology.html">ТЕХНОЛОГИИ</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gratitude.html">БЛАГОДАРНОСТИ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">КОНТАКТЫ</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="header" id="header" style="background-image: url('img/bg/Bagkround.jpg');">
+    <div class="container">
+      <div class="row header__row">
+        <div class="col">
+          <div class="header__title">
+              ОТ НАБРОСКА<br>
+              К ГОТОВОМУ ИЗДЕЛИЮ
+          </div>
+          <div class="header__btn-wrap">
+            <a href="portfolio.html" class="button">ПОСМОТРЕТЬ ПРОЕКТЫ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-nav" id="product-nav">
+    <div class="container">
+      <div class="row product-nav__row">
+
+        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="product-page.html">
+          <div class="product-nav__item__icon">
+              <img class="svg" src="img/svg/office.svg" alt="">
+          </div>
+          <div class="product-nav__item__title">
+              Офисная<br>мебель
+          </div>
+        </a>
+        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="product-page.html">
+          <div class="product-nav__item__icon">
+            <img class="svg" src="img/svg/sofa.svg" alt="">
+          </div>
+          <div class="product-nav__item__title">
+              Офисные<br>диваны
+          </div>
+        </a>
+
+        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="product-page.html">
+            <div class="product-nav__item__icon">
+                <img class="svg" src="img/svg/metalic.svg" alt="">
+            </div>
+            <div class="product-nav__item__title">
+                Металлическая<br>мебель
+            </div>
+        </a>
+
+        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="product-page.html">
+          <div class="product-nav__item__icon">
+            <img class="svg" src="img/svg/bath.svg" alt="">
+          </div>
+            <div class="product-nav__item__title">
+                Мебель<br>для ванной
+            </div>
+        </a>
+
+      
+        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="product-page.html">
+          <div class="product-nav__item__icon">
+            <img class="svg" src="img/svg/kids.svg" alt="">
+          </div>
+          <div class="product-nav__item__title">
+              Детская<br>мебель
+          </div>
+        </a>
+          
+        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="product-page.html">
+          <div class="product-nav__item__icon">
+            <img class="svg" src="img/svg/discount.svg" alt="">
+          </div>
+          <div class="product-nav__item__title">
+              Распродажа<br>мебели
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about__container">
+      <div class="row about__row">
+        <div class="col-12">
+          <div class="section__title">О КОМПАНИИ</div>
+        </div>
+      </div>
+    </div>
+    <div class="about__inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 about__text-block">
+            <div class="about__text-block__title">Компания «Магма» — надежный поставщиккачественной продукции.</div>
+            <div class="about__text-block__text">
+                <p> Нас отличает высокотехнологичная производственная линия, уникальность предоставляемых решений и высокий уровень профессионализма кадров. </p>
+                <p>Мы всегда находимся в тренде новых веяний в сфере технологийи дизайна и выступаем интегратором инновационных решений на всех этапах: от проектирования до сдачи объекта.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 about__img-block">
+            <div class="about__img-block__img">
+              <img src="img/Прямоугольник 3.jpg" alt="" class="about__img-block__img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+
+    <div class="container why__container">
+      <div class="row why__row">
+        <div class="col-12">
+          <div class="section__title">ПОЧЕМУ ВЫБИРАЮТ НАС</div>
+        </div>
+      </div>
+
+      <div class="row why__item">
+        <div class="col-md-4 why__item__img">
+          <img src="img/svg/complex.svg" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8 why__item__text-block">
+          <div class="why__item__title">Комплексный сервис</div>
+          <ul class="list">
+              <li>Бесплатный выезд специалистов для проведение замеров и консультации</li>
+              <li>Бесплатная разработка эскизных проектов</li>
+              <li>Бесплатное устранение рекламаций в период гарантийного срока</li>
+              <!-- <li>Послегарантийное обслуживание</li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="row why__item">
+          <div class="col-md-4 why__item__img">
+            <img src="img/svg/win.svg" alt="">
+          </div>
+          <div class="col-lg-7 col-md-8 why__item__text-block">
+            <div class="why__item__title">Более 100 выигранных тендеров и госконтрактов</div>
+            <ul class="list">
+                <li> Сбербанк</li>
+                <li>Банк Аверс</li>
+                <li>Татнефть-Арена</li>
+                <!-- <li>Таиф НК, ТГК 16 и другие</li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="row why__item">
+            <div class="col-md-4 why__item__img">
+              <img src="img/svg/service.svg" alt="">
+            </div>
+            <div class="col-lg-7 col-md-8 why__item__text-block">
+              <div class="why__item__title">Высококласный сервис</div>
+              <ul class="list">
+                  <li>Помощь в организации доставки, сборке и расстановке товара</li>
+                  <li>Доставка товара весом не более 40 кг по г. Казани осуществляется бесплатно</li>
+                  <li>Бесплатное устранение рекламаций в период гарантийного срока</li>
+
+              </ul>
+            </div>
+          </div>
+
+    </div>
+  </section>
+
+  <section class="clients" id="clients">
+
+    <div class="container clients__container">
+      <div class="row clients__row">
+        <div class="col-12">
+          <div class="section__title">НАШИ КЛИЕНТЫ</div>
+      </div>
+    </div>
+
+    <div class="container clients__container">
+      <div class="row clients__row">
+
+        <div class="col-lg-3 col-md-4 col-6 clients__item ">
+          <img src="img/images/partners logos/АББ.jpg" alt="" class="clients__logo">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 clients__item ">
+          <img src="img/images/partners logos/Банк Москвы.jpg" alt="" class="clients__logo">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 clients__item ">
+          <img src="img/images/partners logos/Банк Россия.jpg" alt="" class="clients__logo">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 clients__item ">
+          <img src="img/images/partners logos/Вертолёты.jpg" alt="" class="clients__logo">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 clients__item ">
+          <img src="img/images/partners logos/ВТБ.jpg" alt="" class="clients__logo">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 clients__item ">
+          <img src="img/images/partners logos/Девон.jpg" alt="" class="clients__logo">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 clients__item ">
+          <img src="img/images/partners logos/Мособлбанк.jpg" alt="" class="clients__logo">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 clients__item ">
+          <img src="img/images/partners logos/Олимпстрой.jpg" alt="" class="clients__logo">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 clients__item ">
+          <img src="img/images/partners logos/Сбербанк.jpg" alt="" class="clients__logo">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 clients__item ">
+          <img src="img/images/partners logos/Строй. управление.jpg" alt="" class="clients__logo">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 clients__item ">
+          <img src="img/images/partners logos/Таиф.jpg" alt="" class="clients__logo">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 clients__item ">
+          <img src="img/images/partners logos/Татнефть.jpg" alt="" class="clients__logo">
         </div>
 
-				<br>
+      </div>
+    </div>
 
-				<h2>Welcome to startup HTML template OptimizedHTML 4!</h2>
+  </section>
+  <section class="footer" id="footer">
+    <div class="container footer__container">
+      <div class="row footer__row">
 
-				<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. Ad distinctio animi, dolorum eaque praesentium unde aliquid, mollitia itaque voluptate quos modi et incidunt tempora fugiat voluptatum quia esse dolor repellat.</p>
-				<p>Nemo velit incidunt assumenda, eaque, sequi vitae facilis doloribus qui totam, fuga iure dignissimos ab non praesentium. Vitae similique, corrupti aliquam nam modi explicabo distinctio qui cum officia ullam quam!</p>
-				<p>Aperiam veritatis debitis quibusdam animi totam quos mollitia aspernatur porro consectetur id quod tempore numquam, ullam ex quae quasi voluptatem incidunt placeat asperiores quas autem! Labore modi quae nulla illo!</p>
+        <div class="col-md-4 footer__col">
+          <div class="footer__col__inner">
+            <div class="footer__logo">
+              <img src="img/svg/magma_logo_white.svg" alt="">
+            </div>
+            <div class="footer__text"><p>Компания «Магма».<br>Все права защищены ©</p></div>
+          </div>
+        </div>
 
-				<br>
+        <div class="col-md-4 footer__col">
+          <div class="footer__col__inner">
+            <div class="footer__text"><p>420000, г. Казань,<br>ул. Амирхана, д. 23</p></div>
+            <a href="tel:8 843 214-58-33" class="footer__link">8 843 214-58-33</a>
+            <a href="mailto:magma_kzn@mail.ru" class="footer__link">magma_kzn@mail.ru</a>
+          </div>
+        </div>
 
-				<div class="row">
-
-					<div class="col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quo vero molestias, esse doloribus corrupti, nemo minus ullam tempore tenetur magni aut quos soluta sit adipisci eius expedita amet non.</div>
-					<div class="col-6">Odit enim harum minus nam excepturi quae vitae consectetur repudiandae natus neque ab asperiores repellat quo dicta vel accusamus voluptatum rerum autem eaque rem laudantium, sint veritatis. Minus, unde rem.</div>
-
-				</div>
-
-				<br>
-
-			</div>
-			
-		</div>
-
-	</div>
+        <div class="col-md-4 footer__col">
+          <div class="footer__col__inner">
+            <div class="footer__text"><p>Следите за нами<br>в соцсетях:</p></div>
+            <a href="#" class="footer__soc instagram"></a>
+            <a href="#" class="footer__soc vk"></a>
+          </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
 
 	<script src="js/scripts.min.js"></script>
 

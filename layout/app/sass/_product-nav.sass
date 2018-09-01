@@ -1,0 +1,65 @@
+.product-nav
+  border-bottom: $border
+  &__item
+    display: block
+    justify-content: center
+    align-items: center
+    padding: 1rem
+    border-left: $border
+    text-align: center
+    line-height: 1.1rem
+    color: $text
+    &__icon
+      margin: 0 auto
+      width: 4rem
+    &:hover
+      color: $accent
+      text-decoration: none
+    &:first-child
+      border-left: 0
+    &__title
+      margin-top: .5rem
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+  .product-nav
+    &__item
+      &:nth-child(4n)
+        border-left: 0
+// ≥768px
++media-breakpoint-down(sm)
+  .product-nav
+    &__item
+      border-left: 0
+      border-top: $border
+      &:nth-child(2n)
+        border-left: $border 
+
+// ≥576px
++media-breakpoint-down(xs)
+ .product-nav
+    &__item
+      border-left: 0
+      border-top: $border
+      &:nth-child(2n)
+        border-left: $border
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+
