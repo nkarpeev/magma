@@ -15,6 +15,8 @@ body
   font-family: $default-font
   overflow-x: hidden
   color: $text
+  &.body-gray
+    background-color: $gray-200
 input, textarea
   border: #666 1px solid
   outline: none
@@ -22,6 +24,14 @@ input, textarea
     border-color: red
   &:required:valid
     border-color: green
+.link
+  color: $accent
+  &-text 
+    color: $text
+    &:hover
+      color: $text
+  &:hover
+    color: $accent
 
 .img-responsive
   display: block
@@ -32,7 +42,13 @@ input, textarea
 
 .text-center
   text-align: center
+.accent
+  color: $accent
+.contact__error
+  color: $accent
+  font-size: .8rem
 
+  color: $accent
 b, strong
   font-weight: bold
 .svg
@@ -60,6 +76,7 @@ b, strong
   text-align: center
   font-size: 2.25rem
   font-weight: bold
+  text-transform: uppercase
   &:after
     position: absolute
     content: ""

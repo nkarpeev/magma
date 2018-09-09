@@ -1,5 +1,8 @@
 .product-nav
   border-bottom: $border
+  &--bg-gray
+    border-bottom: $border
+    background-color: $gray-200
   &__item
     display: block
     justify-content: center
@@ -12,9 +15,11 @@
     &__icon
       margin: 0 auto
       width: 4rem
-    &:hover
+    &:hover, &.active
       color: $accent
       text-decoration: none
+      .st0, .a
+        fill: $accent
     &:first-child
       border-left: 0
     &__title

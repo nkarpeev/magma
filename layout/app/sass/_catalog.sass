@@ -1,0 +1,128 @@
+.catalog
+  background-color: $gray-200
+  padding-top: 3rem
+  &__item
+    
+    &.open
+      .catalog__item-details
+        display: block
+      .catalog__item-button--open
+        display: none
+      .catalog__item-header
+        margin-bottom: 0
+
+    &-image
+      border: 1px solid $gray-300
+    &-img
+      max-width: 100%
+    &-header
+      text-align: center
+      padding: 1rem 0
+      margin-bottom: 3rem
+    &-title
+      font-weight: bold
+      font-size: 1.25rem
+      
+    &-price
+      font-weight: bold
+      color: $accent
+      margin-bottom: 0.5rem
+
+
+    &-details
+      display: none
+      position: relative
+      background-color: $white
+      border: 1px solid $gray-300
+      padding: 3rem 2rem
+      line-height: 1.4
+      margin-bottom: 3rem
+      &:after, &:before
+        position: absolute
+        display: block
+        content: ""
+        top: -9px
+        margin-left: -10px
+        left: 50%
+        width: 0 
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        
+      &:after
+        border-bottom: 10px solid #ffffff
+      &:before
+        border-bottom: 10px solid $gray-300
+        top: -11px
+
+      &__title
+        margin-top: 1rem
+        position: relative
+        list-style-type: none
+        margin-top: 1rem
+        padding-left: 0.75rem
+        &:before
+          position: absolute
+          content: ""
+          height: 4px
+          width: 4px
+          margin: 0 -2rem
+          top: .7rem
+          left: 2rem
+          border-radius: 50%
+          background-color: $accent
+      &__text
+      &__button
+        text-align: center
+        padding-top: 3rem
+
+    &-button--open,
+    &-button--close
+      display: inline-block
+      border: none
+      color: $accent
+      text-decoration: none
+      padding: .25rem 1.5rem
+      height: 2rem
+      font-size: 13px
+      text-transform: uppercase
+      font-weight: 600
+      letter-spacing: 1px
+      border-radius: 2rem
+      text-align: center
+      position: relative
+      outline: none
+      width: 12.5rem
+      transition: background-color .1s ease
+      border: 1px solid $accent
+      &::after
+        position: relative
+        left: .5rem
+        top: .25rem
+        content: ''
+        width: .65rem
+        height: 1rem
+        display: inline-block
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3LjAxNyA0Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZjYzNDQwO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTMuNTA5LDEwMS4xNDFBLjQ5LjQ5LDAsMCwxLDMuMTYyLDEwMUwuMTQ1LDk3Ljk3OWEuNDkxLjQ5MSwwLDAsMSwuNjk1LS42OTVsMi42NywyLjY3LDIuNjctMi42N2EuNDkxLjQ5MSwwLDAsMSwuNjk1LjY5NUwzLjg1NywxMDFBLjQ5LjQ5LDAsMCwxLDMuNTA5LDEwMS4xNDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC4wMDEgLTk3LjE0MSkiLz48L3N2Zz4=')
+        background-repeat: no-repeat
+        background-position: center
+
+      &:focus, &:hover
+          text-decoration: none
+          color: #fff
+      &:hover
+          background-color: lighten($accent, 5%)
+          &::after
+               background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3LjAxNyA0Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTMuNTA5LDEwMS4xNDFBLjQ5LjQ5LDAsMCwxLDMuMTYyLDEwMUwuMTQ1LDk3Ljk3OWEuNDkxLjQ5MSwwLDAsMSwuNjk1LS42OTVsMi42NywyLjY3LDIuNjctMi42N2EuNDkxLjQ5MSwwLDAsMSwuNjk1LjY5NUwzLjg1NywxMDFBLjQ5LjQ5LDAsMCwxLDMuNTA5LDEwMS4xNDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC4wMDEgLTk3LjE0MSkiLz48L3N2Zz4=')
+      &:active
+          background-color: darken($accent, 5%)
+          // &::after
+          //     opacity: .32
+    &-button--open
+      &:hover
+       &::after
+        // background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3LjAxNyA0Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTMuNTA5LDEwMS4xNDFBLjQ5LjQ5LDAsMCwxLDMuMTYyLDEwMUwuMTQ1LDk3Ljk3OWEuNDkxLjQ5MSwwLDAsMSwuNjk1LS42OTVsMi42NywyLjY3LDIuNjctMi42N2EuNDkxLjQ5MSwwLDAsMSwuNjk1LjY5NUwzLjg1NywxMDFBLjQ5LjQ5LDAsMCwxLDMuNTA5LDEwMS4xNDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC4wMDEgLTk3LjE0MSkiLz48L3N2Zz4=')
+    &-button--close
+       &::after
+         transform: rotate(180deg)
+       
