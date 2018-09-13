@@ -25,22 +25,26 @@
   &__menu
     background-color: $black
 
+.navbar-toggler
+  position: relative
 
 /*==========  Desktop First  ==========*/
 
 // ≥1200px
 +media-breakpoint-down(lg)
-
+  .navbar
+    padding: 0
 // ≥992px
 +media-breakpoint-down(md)
-
+  .nav
+    &__header
+      &__link
+        display: none
 // ≥768px
 +media-breakpoint-down(sm)
   .nav
     &__header
-      &__link
-        span 
-          display: none
+      padding: 1rem
 
 // ≥576px
 +media-breakpoint-down(xs)
@@ -53,9 +57,10 @@
 
 // ≤768px
 +media-breakpoint-up(md)
-
+  
 // ≤992px
 +media-breakpoint-up(lg)
-
+  .navbar-toggler
+    display: none
 // ≤1200px
 +media-breakpoint-up(xl)
