@@ -23,13 +23,34 @@
     width: 7.5rem
     margin-bottom: 2rem
   &__soc
+    position: relative
     margin-right: .25rem
     &:before
+      position: relative
       display: inline-block
       content: ""
       width: 1.5rem
       height: 1.5rem
       background-size: contain
+      // background-color: #fff
+      border-radius: 50%
+      z-index: 2
+      
+    &:after
+      border: 1px solid #F63440
+      position: absolute
+      display: inline-block
+      content: ""
+      width: 1.5rem
+      height: 1.5rem
+      background-size: contain
+      background-color: #fff
+      border-radius: 50%
+      left: 0
+      
+    &:hover
+      &:before
+        opacity: .8
 
 
 .vk
