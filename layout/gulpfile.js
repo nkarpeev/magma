@@ -3,8 +3,9 @@ var syntax        = 'sass'; // Syntax: sass or scss;
 var gulp          = require('gulp'),
 		gutil         = require('gulp-util' ),
     sass          = require('gulp-sass'),
-    sourcemaps = require('gulp-sourcemaps');
-		browserSync   = require('browser-sync'),
+    sourcemaps    = require('gulp-sourcemaps');
+    browserSync   = require('browser-sync'),
+    connect       = require('gulp-connect-php'),
 		concat        = require('gulp-concat'),
 		uglify        = require('gulp-uglify'),
 		cleancss      = require('gulp-clean-css'),
@@ -14,15 +15,20 @@ var gulp          = require('gulp'),
 		rsync         = require('gulp-rsync');
 
 gulp.task('browser-sync', function() {
-	browserSync({
-		server: {
-			baseDir: 'app'
-		},
-		notify: false,
-		// open: false,
-		// online: false, // Work Offline Without Internet Connection
-		// tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
-	});
+  connect.server({
+    base: "app"
+  }, function (){
+	  browserSync({
+      proxy: '127.0.0.1:8000',
+	  	// server: {
+	  	// 	baseDir: 'app'
+	  	// },
+	  	notify: false,
+	  	// open: false,
+	  	// online: false, // Work Offline Without Internet Connection
+	  	// tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
+    });
+  });
 });
 
 gulp.task('styles', function() {

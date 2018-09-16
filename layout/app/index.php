@@ -1,41 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-
-  <meta charset="utf-8">
-  <!-- <base href="/"> -->
-
-  <title>Магма</title>
-  <meta name="description" content="">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <!-- Template Basic Images Start -->
-  <meta property="og:image" content="path/to/image.jpg">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="img/favicon/site.webmanifest">
-  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&amp;subset=cyrillic"
-    rel="stylesheet">
-
-
-  <!-- Template Basic Images End -->
-
-  <!-- Custom Browsers Color Start -->
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ff0000">
-  <!-- Custom Browsers Color End -->
-
-  <link rel="stylesheet" href="css/main.min.css">
-
-</head>
-
-<body>
+<?php require_once $_SERVER['DOCUMENT_ROOT'].'/parts/head.php';?>
 
   <section class="nav__section" id="nav">
     <div class="nav__header">
@@ -75,28 +38,28 @@
                   <a class="nav-link" href="/">ГЛАВНАЯ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">ПОРТФОЛИО ПРОЕКТОВ</a>
+                  <a class="nav-link" href="portfolio.php">ПОРТФОЛИО ПРОЕКТОВ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="our_product.html">НАШИ ПРОДУКТЫ</a>
+                  <a class="nav-link" href="our_product.php">НАШИ ПРОДУКТЫ</a>
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a class="nav-link " href="production.html" role="button" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link " href="production.php" role="button" aria-haspopup="true" aria-expanded="false">
                     ПРОИЗВОДСТВО
                   </a>
                   <span class="dropdown-btn" data-toggle="dropdown"></span>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="production.html">ОБОРУДОВАНИЕ</a>
+                    <a class="dropdown-item" href="production.php">ОБОРУДОВАНИЕ</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="production.html">ТЕХНОЛОГИИ</a>
+                    <a class="dropdown-item" href="production.php">ТЕХНОЛОГИИ</a>
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="gratitude.html">БЛАГОДАРНОСТИ</a>
+                  <a class="nav-link" href="gratitude.php">БЛАГОДАРНОСТИ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">КОНТАКТЫ</a>
+                  <a class="nav-link" href="contact.php">КОНТАКТЫ</a>
                 </li>
               </ul>
             </div>
@@ -115,7 +78,7 @@
             К ГОТОВОМУ ИЗДЕЛИЮ
           </div>
           <div class="header__btn-wrap">
-            <a href="portfolio.html" class="button">ПОСМОТРЕТЬ ПРОЕКТЫ</a>
+            <a href="portfolio.php" class="button">ПОСМОТРЕТЬ ПРОЕКТЫ</a>
           </div>
         </div>
       </div>
@@ -126,7 +89,7 @@
     <div class="container">
       <div class="row product-nav__row">
 
-        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="our_product.html">
+        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="our_product.php">
           <div class="product-nav__item__icon">
             <img class="svg" src="img/svg/office.svg" alt="">
           </div>
@@ -134,7 +97,7 @@
             Офисная<br>мебель
           </div>
         </a>
-        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="our_product.html">
+        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="our_product.php">
           <div class="product-nav__item__icon">
             <img class="svg" src="img/svg/sofa.svg" alt="">
           </div>
@@ -143,7 +106,7 @@
           </div>
         </a>
 
-        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="our_product.html">
+        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="our_product.php">
           <div class="product-nav__item__icon">
             <img class="svg" src="img/svg/metalic.svg" alt="">
           </div>
@@ -152,7 +115,7 @@
           </div>
         </a>
 
-        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="our_product.html">
+        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="our_product.php">
           <div class="product-nav__item__icon">
             <img class="svg" src="img/svg/bath.svg" alt="">
           </div>
@@ -162,7 +125,7 @@
         </a>
 
 
-        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="our_product.html">
+        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="our_product.php">
           <div class="product-nav__item__icon">
             <img class="svg" src="img/svg/kids.svg" alt="">
           </div>
@@ -171,7 +134,7 @@
           </div>
         </a>
 
-        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="our_product.html">
+        <a class="col col-lg-2 col-md-4 col-6 product-nav__item" href="our_product.php">
           <div class="product-nav__item__icon">
             <img class="svg" src="img/svg/discount.svg" alt="">
           </div>
@@ -206,7 +169,7 @@
           </div>
           <div class="col-lg-6 about__img-block">
             <div class="about__img-block__img">
-              <img src="img/Прямоугольник 3.jpg" alt="" class="about__img-block__img">
+              <img src="img/about.jpg" alt="" class="about__img-block__img">
             </div>
           </div>
         </div>
@@ -268,7 +231,7 @@
 
     </div>
   </section>
-a
+
   <section class="clients" id="clients">
     <div class="container clients__container">
       <div class="row clients__row">
@@ -281,84 +244,48 @@ a
         <div class="row clients__row">
 
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partners logos/АББ.jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(1).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partners logos/Банк Москвы.jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(2).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partners logos/Банк Россия.jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(3).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partners logos/Вертолёты.jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(4).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partners logos/ВТБ.jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(5).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partners logos/Девон.jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(6).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partners logos/Мособлбанк.jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(7).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partners logos/Олимпстрой.jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(8).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partners logos/Сбербанк.jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(9).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partners logos/Строй. управление.jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(10).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partners logos/Таиф.jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(11).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partners logos/Татнефть.jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(12).jpg" alt="" class="clients__logo">
           </div>
 
         </div>
       </div>
   </section>
 
-  <section class="footer" id="footer">
-    <div class="container footer__container">
-      <div class="row footer__row">
 
-        <div class="col-md-4 footer__col">
-          <div class="footer__col__inner">
-            <div class="footer__logo">
-              <img src="img/svg/magma_logo_white.svg" alt="">
-            </div>
-            <div class="footer__text">
-              <p>Компания «Магма».<br>Все права защищены ©</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 footer__col">
-          <div class="footer__col__inner">
-            <div class="footer__text">
-              <p>420000, г. Казань,<br>ул. Амирхана, д. 23</p>
-            </div>
-            <a href="tel:8 843 214-58-33" class="footer__link">8 843 214-58-33</a>
-            <a href="mailto:magma_kzn@mail.ru" class="footer__link">magma_kzn@mail.ru</a>
-          </div>
-        </div>
-
-        <div class="col-md-4 footer__col">
-          <div class="footer__col__inner">
-            <div class="footer__text">
-              <p>Следите за нами<br>в соцсетях:</p>
-            </div>
-            <a href="#" class="footer__soc instagram"></a>
-            <a href="#" class="footer__soc vk"></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
+  <?php require_once $_SERVER['DOCUMENT_ROOT'].'/parts/footer.php'; ?>
 
   <script src="js/scripts.min.js"></script>
 
