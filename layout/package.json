@@ -1,7 +1,7 @@
 {
-  "name": "optimizedhtml",
+  "name": "magma.ru",
   "version": "4.0.0",
-  "description": "OptimizedHTML 4 - Start HTML Template",
+  "description": "magma.ru",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +11,7 @@
   "devDependencies": {
     "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
+    "gulp-connect-php":" ^1.0.3",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
@@ -18,6 +19,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-rsync": "0.0.8",
     "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8"
   }

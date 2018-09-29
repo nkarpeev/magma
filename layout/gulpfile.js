@@ -1,4 +1,5 @@
 var syntax        = 'sass'; // Syntax: sass or scss;
+var format        = 'php'; // Format document: html or php;
 
 var gulp          = require('gulp'),
 		gutil         = require('gulp-util' ),
@@ -16,18 +17,28 @@ var gulp          = require('gulp'),
 
 gulp.task('browser-sync', function() {
   connect.server({
-    base: "app"
-  }, function (){
-	  browserSync({
-      proxy: '127.0.0.1:8000',
-	  	// server: {
-	  	// 	baseDir: 'app'
-	  	// },
-	  	notify: false,
-	  	// open: false,
-	  	// online: false, // Work Offline Without Internet Connection
-	  	// tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
-    });
+      base: "app"
+    }, function (){
+      if(format === "php"){
+        browserSync({
+          proxy: '127.0.0.1:8000',
+          notify: false,
+          // open: false,
+          // online: false, // Work Offline Without Internet Connection
+          // tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
+        });
+    } else {
+      browserSync({
+        server: {
+          baseDir: 'app'
+        },
+        notify: false,
+        // open: false,
+        // online: false, // Work Offline Without Internet Connection
+        // tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
+      });
+    }
+
   });
 });
 
@@ -75,7 +86,8 @@ gulp.task('rsync', function() {
 gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
 	gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
-	gulp.watch('app/*.html', browserSync.reload);
+  gulp.watch('app/**/*.'+format , browserSync.reload);
+  
 });
 
 gulp.task('default', ['watch']);
