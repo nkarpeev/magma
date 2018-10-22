@@ -102,40 +102,52 @@
         <div class="row clients__row">
 
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
+            <img src="img/images/partnerslogos/logo(9).jpg" alt="" class="clients__logo">
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 clients__item ">
+            <img src="img/images/partnerslogos/logo(4).jpg" alt="" class="clients__logo">
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 clients__item ">
+            <img src="img/images/partnerslogos/logo(12).jpg" alt="" class="clients__logo">
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 clients__item ">
+            <img src="img/images/partnerslogos/logo(13).jpg" alt="" class="clients__logo">
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 clients__item ">
+            <img src="img/images/partnerslogos/logo(6).jpg" alt="" class="clients__logo">
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 clients__item ">
+            <img src="img/images/partnerslogos/logo(11).jpg" alt="" class="clients__logo">
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 clients__item ">
+            <img src="img/images/partnerslogos/logo(16).jpg" alt="" class="clients__logo">
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 clients__item ">
             <img src="img/images/partnerslogos/logo(1).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
             <img src="img/images/partnerslogos/logo(2).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partnerslogos/logo(3).jpg" alt="" class="clients__logo">
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partnerslogos/logo(4).jpg" alt="" class="clients__logo">
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 clients__item ">
             <img src="img/images/partnerslogos/logo(5).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partnerslogos/logo(6).jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(14).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partnerslogos/logo(7).jpg" alt="" class="clients__logo">
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partnerslogos/logo(8).jpg" alt="" class="clients__logo">
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partnerslogos/logo(9).jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(3).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
             <img src="img/images/partnerslogos/logo(10).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partnerslogos/logo(11).jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(7).jpg" alt="" class="clients__logo">
           </div>
           <div class="col-lg-3 col-md-4 col-6 clients__item ">
-            <img src="img/images/partnerslogos/logo(12).jpg" alt="" class="clients__logo">
+            <img src="img/images/partnerslogos/logo(15).jpg" alt="" class="clients__logo">
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 clients__item ">
+            <img src="img/images/partnerslogos/logo(8).jpg" alt="" class="clients__logo">
           </div>
 
         </div>
