@@ -43,10 +43,10 @@
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link " href="production.php" role="button" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   ПРОИЗВОДСТВО
                 </a>
-                <span class="dropdown-btn" data-toggle="dropdown"></span>
+                
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="production.php">ОБОРУДОВАНИЕ</a>
                   <div class="dropdown-divider"></div>
